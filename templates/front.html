@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block newpost %}
+    <a href="/blog/newpost" class="new-post btn">New Post</a>
+{% endblock %}
+    
+{% block logout %}
+    {% if user_id %}
+        <a href="/logout" class="logout btn">Log Out</a>
+    {% endif %}
+{% endblock %}
+
+
+{% block content %}
+
+  {% for p in posts %}
+    {{ p.render_post_template(user_id = user_id) | safe }}
+    {% set disable = p.compare_like_author_to_user(user_id) %}
+
+    <br>
+    <form method="post" content-type="text/html">
+        <input type="hidden" name="post_id" value="{{p.key()}}"></input>
+        {% if not cookie_value or p.post_author_id == user_id %}
+            <button name="edit_button" type="image" class="entypo-pencil" value=1 > edit</button>
+            <button name="delete_button" type="image" class="entypo-trash" value=1 > delete</button>       
+        {% endif %}
+        {% if not cookie_value or p.post_author_id != user_id %}
+            <button name="like_button" type="submit" class="entypo-thumbs-up" value=1 {{ disable }}> like</button>
+            <button name="unlike_button" type="submit" class="entypo-thumbs-down" value=1 {{ disable }}> unlike</button>
+            <button name="comment_button" type="submit" value=1 >Comment</button>
+        {% endif %}
+        <span class="likes">{{p.likes}} Likes</span>
+    </form>
+    {{ p.render_post_comment(user_id = user_id) | safe }}
+    <br>
+  {% endfor %}
+
+{% endblock %}

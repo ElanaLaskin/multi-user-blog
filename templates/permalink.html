@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block logout %}
+  	<a href="/logout" class="logout btn">Log Out</a>
+{% endblock %}
+
+{% block content %}
+  {{post.render_post_template() | safe}}
+{% endblock %}

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blog</title>
+	<link type="text/css" rel="stylesheet" href="/static/main.css"/>
+</head>
+<body class="home-body">
+	<div>
+		{% if logged_in %}
+			<h2 class="home-welcome">Welcome, {{name}}!</h2>
+			<a class="home-button left" href="/logout">Log Out</a>
+		{% else %}
+			<a class="home-button left" href="/signup">Sign Up</a>
+			<a class="home-button center" href="/login">Log In</a>
+		{% endif %}
+		<a class="home-button right" href="/blog">Visit Blog</a>
+	</div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block logout %}
+  <a href="/logout" class="logout btn">Log Out</a>
+{% endblock %}
+
+{% block content %}
+  <h2>{{heading}}</h2>
+
+    <form action="{{handler}}" method="post">
+    	<input type="hidden" name="post_id" value="{{post_id}}"></input>
+    	<input type="hidden" name="post_url_number" value="{{post_url_number}}"></input>
+      <label>
+        <div>subject</div>
+        <input type="text" name="subject" value="{{subject}}">
+      </label>
+
+      <label>
+        <div>blog</div>
+        <textarea name="content">{{content}}</textarea>
+      </label>
+
+      <div class="error">{{error}}</div>
+
+      <input type="submit">
+      <input type="submit" name="cancel" value="Cancel">
+    </form>
+{% endblock %}

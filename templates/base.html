@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link type="text/css" rel="stylesheet" href="/static/main.css" />
+  <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans:600i" rel="stylesheet">
+  {% block title %}
+  <title>CS 253 Blog</title>
+  {% endblock %}
+</head>
+
+<body>
+  {% block page %}
+    {% block heading %}
+    <div>
+      <a href="/blog" class="main-title">
+        CS 253 Blog
+      </a>
+    </div>
+    {% endblock %}
+    <div>
+      {% block newpost %}
+      {% endblock %}
+
+      {% block logout %}
+      {% endblock %}
+    </div>
+    
+    <div id="content">
+    {% block content %}
+    {% endblock %}
+    </div>
+    <br>
+    <br>
+  {% endblock %}
+</body>
+
+</html>
+

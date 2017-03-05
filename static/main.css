@@ -1,0 +1,212 @@
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+
+    width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+    color: #333;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.error {
+    color: red;
+}
+
+label {
+  display: block;
+  font-size: 20px;
+}
+
+label + label {
+    margin-top: 20px;
+}
+
+input[type=text] {
+    width: 500px;
+    font-size: 20px;
+    padding: 2px;
+    font-family: monospace;
+}
+
+textarea {
+  width: 500px;
+  height: 400px;
+  font-size: 17px;
+  font-family: monospace;
+}
+
+input[type=submit] {
+  font-size: 24px;
+}
+
+button {
+    font-size: 13px;
+}
+
+.home-body {
+    background-color: #f7edd9;
+    background-image: url("/images/blog-image.svg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 110%;
+    background-size: 75%;
+}
+
+.home-button {
+    border-radius: 12px;
+    width: 100px;
+    font-size: 16px;
+    background-color: #e9cd96;
+    padding: 10px;
+    margin-top: 70px;
+    text-decoration: none;
+    text-align: center;
+    color: #111;
+    border: 2px solid #888;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.center {
+    position: absolute;
+    left: 46%;
+    margin-right: -50%;
+}
+
+.home-welcome {
+    color: #bd8c28;
+    font-size: 50px;
+    text-align: center;
+}
+
+.main-title {
+    display: block;
+    color: #222;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin: 30px 30px 0px 0px;
+}
+
+.post-heading {
+    position: relative;
+    border-bottom: 3px solid #666;
+}
+
+.post-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.post-info {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    color: #999;
+}
+
+.post-author {
+    color: #777;
+    font-family: "Brush Script MT", cursive;
+    font-size: 20px;
+}
+
+.post-date {
+    color: #777;
+    font-weight: bold;
+}
+
+.post-content {
+    margin-top: 25px;
+    background-color: #f7edd9;
+    padding: 50px;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.comment-heading h3 {
+    color: #777;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    position: relative;
+    border-bottom: 2px solid #777;
+}
+
+.comment-content {
+    background-color: #fff9ed;
+    padding: 30px;
+    border-bottom: 1px solid #999;
+    font-family: 'Open Sans', sans-serif;
+    color: #666;
+}
+
+.comment-info {
+    color: #666;
+    margin-top: 20px;
+}
+
+.comment-author {
+    font-family: "Brush Script MT", cursive;
+    font-size: 17px;
+}
+
+.post-comment {
+    padding: 30px;
+}
+
+.new-post {
+    margin-bottom: 50px;
+}
+
+.logout {
+    position: absolute;
+    right: 300px;
+    margin-bottom: 50px;
+}
+
+.comment_link {
+    background:none!important;
+     border:none; 
+     padding:0!important;
+     font: inherit;
+     /*border is optional*/
+     cursor: pointer;
+     color: #999;
+}
+
+.likes {
+    float: right;
+    padding-right: 10px;
+}
+
+.btn {
+    appearance: button;
+    -moz-appearance: button;
+    -webkit-appearance: button;
+    text-decoration: none;
+    font: menu;
+    color: ButtonText;
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 8px;
+}
