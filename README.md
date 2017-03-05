@@ -3,6 +3,7 @@ A simple blog with user signup
 Here's the [link](https://monsey-therapists.appspot.com) to the website. 
 
 Instructions for running application:
+
 1. Install [Cloud SDK](https://cloud.google.com/appengine/downloads#Google_App_Engine_SDK_for_Python) 
 (runs on Linux, Mac OS X and Windows, and requires Python 2.7.x)
 2. Extract the file to any location on your file system.
